@@ -4,39 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriFit - Seu Companheiro de Nutrição Personalizada</title>
+    <title>WatchVision</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header>
-            <span class="logo" ><img src="teste.png" widht="100" height="120" class="text-focus-in"></span>
-            <nav>
+        <span class="logo"><img src="LOGOOFC.png" width="100" height="120" class="text-focus-in"></span>
+        <nav>
             <ul class="nav-links">
-                <li><a href="#" class="text-focus-in">Início</a></li>
-                <li><a href="#" class="text-focus-in">Funcionalidades</a></li>
-                <li><a href="#" class="text-focus-in">Vantagens</a></li>
-                <li><a href="#" class="text-focus-in">Sobre Nós</a></li>
-                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Suporte</a></li>
             </ul>
         </nav>
-        <a href="#" class="text-focus-in"><button>Contato</button></a>
     </header>
-        <div class="parent">
+    
+    <div class="parent">
         <section class="descricao">
-            <div>
-                <h1>Seu Companheiro de Nutrição Personalizada</h1>
-                <p>A NutriFit é uma empresa dedicada em melhorar a qualidade de vida,
-                     projetada especialmente para atender pessoas com problemas que buscam melhorar o bem estar,
-                      Mostramos a importância de uma dieta equilibrada e exercício físico. NutriFit surge como uma solução acessível e prática.</p>
-                <button href="#funcionalidades" align="center">Saiba Mais</button>
-                
-            </div>
+            <h1>Watch - Vision</h1>
+            <p>Somos uma empresa dedicada a criar soluções inovadoras para pessoas com deficiência visual, seja ela completa ou parcial.</p>
+            <a href="#funcionalidades">Comprar</a>
         </section>
+
         <div class="imagem-container">
-            <img src="Splash_Login.png">
+            <img src="relogio.png" alt="Imagem de Login">
         </div>
     </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 </html>
