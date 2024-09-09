@@ -1,5 +1,5 @@
 
-<h1 align="center">:file_cabinet: Plataforma de Assistência Online para Deficientes Visuais (Visionary Assist)</h1>
+<h1 align="center">:file_cabinet: Plataforma de Assistência Online para Deficientes Visuais (Watch - Vision)</h1>
 
 ## :memo: Descrição
 O Site Visionary Assist oferece um serviço de assistência online para pessoas com deficiência visual. O site deve ser projetado com ênfase em acessibilidade, usabilidade, design ético e segurança.
