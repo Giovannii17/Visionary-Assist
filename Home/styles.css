@@ -6,7 +6,9 @@ body {
     font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
@@ -14,32 +16,32 @@ li, a, button {
 
 .logo {
     display: flex;
-    justify-content: flex-start;  
+    justify-content: flex-start;
     color: #fff;
-    font-size: 2.2rem; 
+    font-size: 2.6rem;
     flex: 1;
 }
 
 .logo img {
-    margin-left: 5%; 
-    margin-top: -1rem; 
+    margin-left: 20%;
+    margin-top: -4.5rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4%; 
-    background-image: url('topo.png');
+    align-items: left;
+    padding: 4rem 8%;
+    background-image: url('wave.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 18%; 
-    position: relative; 
-    z-index: 2; 
+    background-position: fixed 10%;
+    position: relative;
+    z-index: 2;
 }
 
 nav {
-    flex: 2; 
+    flex: 2;
 }
 
 .nav-links {
@@ -48,7 +50,7 @@ nav {
 
 .nav-links li {
     display: inline-block;
-    padding: 0 1rem; 
+    padding: 0 1rem;
 }
 
 .nav-links li a:hover {
@@ -56,10 +58,10 @@ nav {
 }
 
 button {
-    padding: 0.8rem 1.5rem; 
+    padding: 0.8rem 1.5rem;
     background-color: #36B1BF;
     border: none;
-    border-radius: 3rem; 
+    border-radius: 3rem;
     cursor: pointer;
 }
 
@@ -69,43 +71,44 @@ button:hover {
 
 .parent {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     text-align: center;
-    padding: 2rem; 
-    margin-top: -10%; 
+    padding: 2rem;
+    margin-top: -10%;
     background-image: url('design2.png');
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center 10%; 
-    position: relative; 
-    z-index: 1; 
+    background-size: cover;
+    background-position: center 10%;
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 5rem; 
+    font-size: 5rem;
     color: #fff;
     font-weight: bold;
     animation: fadeInDown 1s ease-in-out;
 }
 
 .descricao {
-    padding: 1.5rem; 
-    background-color: transparent; 
-    box-shadow: none; 
-    border-radius: 0; 
-    max-width: 100%;
+    padding: 1.5rem;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 50%;
     margin: 0 auto;
+    margin-left: -3%;
 }
 
 .descricao p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem; 
-    line-height: 1.6;
-    margin-bottom: 1.5rem; 
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
     font-weight: bold;
     color: #fff;
 }
@@ -114,12 +117,12 @@ h1 {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     text-decoration: none;
-    padding: 0.8rem 1.5rem; 
-    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
     background-color: #2699A6;
     color: white;
     font-weight: bold;
-    border-radius: 1.5rem; 
+    border-radius: 1rem;
     transition: background-color 0.3s ease;
 }
 
@@ -133,6 +136,6 @@ h1 {
 }
 
 .imagem-container img {
-    max-width: 60%;
+    max-width: 25rem;
     height: auto;
 }
