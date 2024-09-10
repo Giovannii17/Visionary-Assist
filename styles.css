@@ -1,0 +1,138 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+li, a, button {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;  
+    color: #fff;
+    font-size: 2.2rem; 
+    flex: 1;
+}
+
+.logo img {
+    margin-left: 5%; 
+    margin-top: -1rem; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4%; 
+    background-image: url('topo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 18%; 
+    position: relative; 
+    z-index: 2; 
+}
+
+nav {
+    flex: 2; 
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 1rem; 
+}
+
+.nav-links li a:hover {
+    color: #6090d7;
+}
+
+button {
+    padding: 0.8rem 1.5rem; 
+    background-color: #36B1BF;
+    border: none;
+    border-radius: 3rem; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #036873;
+}
+
+.parent {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem; 
+    margin-top: -10%; 
+    background-image: url('design2.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center 10%; 
+    position: relative; 
+    z-index: 1; 
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 5rem; 
+    color: #fff;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.descricao {
+    padding: 1.5rem; 
+    background-color: transparent; 
+    box-shadow: none; 
+    border-radius: 0; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.descricao p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem; 
+    line-height: 1.6;
+    margin-bottom: 1.5rem; 
+    font-weight: bold;
+    color: #fff;
+}
+
+.descricao a {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem; 
+    font-size: 1.5rem;
+    background-color: #2699A6;
+    color: white;
+    font-weight: bold;
+    border-radius: 1.5rem; 
+    transition: background-color 0.3s ease;
+}
+
+.descricao a:hover {
+    background-color: #0056b3;
+}
+
+.imagem-container {
+    position: relative;
+    z-index: 0;
+}
+
+.imagem-container img {
+    max-width: 60%;
+    height: auto;
+}
