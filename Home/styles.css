@@ -23,8 +23,9 @@ button {
 }
 
 .logo img {
-    margin-left: 20%;
+    margin-left: 0vh;
     margin-top: -4.5rem;
+    
 }
 
 header {
@@ -32,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4rem 8%;
-    background-image: url('image.png');
+    background-image: url('wave.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed 10%;
@@ -46,13 +47,19 @@ nav {
 
 .nav-links {
     list-style: none;
-    margin-top: -6%;
-}
+    margin-top: -4%;
+    margin-right: 0rem;
+    padding: 0;
+    display: flex; 
+    }
+
 
 .nav-links li {
     display: inline-block;
     padding: 0 1.5rem;
+    margin-right: 0.5rem;
 }
+
 
 .nav-links li a:hover {
     color: #6090d7;
@@ -132,14 +139,18 @@ h1 {
 }
 
 .imagem-container {
-    position: relative;
-    z-index: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem-container img {
     max-width: 25rem;
     height: auto;
 }
+
+
 
 /* Rodapé */
 footer {
@@ -201,3 +212,53 @@ footer {
     color: #6090d7; /* Azul suave para o copyright */
 }
 
+
+
+/* Configurações em Telas Menores */
+
+/* Inicio da Config do Header*/
+@media (max-width: 768px) {
+    header {
+        background-color: #115259;
+        background-image: none; 
+        background-size: auto; 
+        padding: 1rem 4%;
+        flex-direction:row; 
+    }
+
+    .logo img {
+        width: 80px; /* Reduz o tamanho do logo */
+        height: auto;
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 0rem; /* Ajusta a posição para baixo */
+    }
+
+    nav {
+        margin-top: 3rem; /* Espaço entre o logo e os links de navegação */
+    }
+
+    .nav-links li {
+        margin-right: 0; /* Remove a margem à direita */
+        margin-bottom: 1rem; /* Espaçamento entre itens verticais */
+    }
+}
+
+/* Fim da Config do Header*/
+
+
+
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .descricao {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .imagem-container img {
+        max-width: 18rem;
+    }
+}
