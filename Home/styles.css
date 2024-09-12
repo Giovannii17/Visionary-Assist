@@ -161,7 +161,7 @@ footer {
 }
 
 .footer-content {
-    display: flex;
+    display:block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -249,8 +249,8 @@ footer {
 
 @media (max-width: 768px) {
     .parent {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction:column;
+        justify-content:space-between;
     }
 
     .descricao {
