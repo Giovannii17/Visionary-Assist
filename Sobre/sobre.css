@@ -1,0 +1,221 @@
+/* Estilos principais */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+/* Cabeçalho */
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 2.6rem;
+    flex: 0.5rem;
+}
+
+.logo img {
+    margin-left: 0vh;
+    margin-top: -4.5rem;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 8%;
+    background-image: url('wave.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed 10%;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    list-style: none;
+    margin-top: -4%;
+    margin-right: 0rem;
+    padding: 0;
+    display: flex;
+}
+
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-links li a:hover {
+    color: #6090d7;
+}
+
+
+/* Quadros para conteúdo da página Sobre */
+
+.about-page {
+
+    background-image: url('design_fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 10%;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -3%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.about-page .descricao {
+    padding: 1.5rem;
+    background-color: transparent;
+    box-shadow: none;
+    max-width: 50%;
+    margin: 0 auto;
+
+}
+
+.quadro {
+    background: linear-gradient(135deg, #115259, #000000);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.quadro:hover {
+    transform: translateY(-5px);
+    background-color: #036873;
+}
+
+.quadro h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.quadro p {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+
+}
+
+/* Seção da Equipe */
+.equipe-container {
+    padding: 4rem 0;
+    background-color: #115259;
+    color: white;
+    text-align: center;
+}
+
+.equipe-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cards-container .card {
+    flex: 1 1 30%;
+    max-width: 350px;
+    background: linear-gradient(135deg, #115259, #000000);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.cards-container .card:hover {
+    transform: translateY(-5px);
+}
+
+.cards-container .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cards-container .card p {
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #0e454b;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Inicio da Config do Header*/
+@media (max-width: 768px) {
+    header {
+        background-color: #115259;
+        background-image: none;
+        background-size: auto;
+        padding: 1rem 4%;
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 80px;
+        /* Reduz o tamanho do logo */
+        height: auto;
+        margin-left: 0;
+        /* Remove a margem esquerda */
+        margin-top: 0rem;
+        /* Ajusta a posição para baixo */
+    }
+
+    nav {
+        margin-top: 3rem;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        /* Remove a margem à direita */
+        margin-bottom: 1rem;
+        /* Espaçamento entre itens verticais */
+    }
+}
+
+/* Fim da Config do Header*/
