@@ -1,3 +1,21 @@
+// Captura os elementos dos links pelo ID
+document.getElementById('home-link').addEventListener('click', function() {
+    window.location.href = '../Home/home.html';
+});
+
+document.getElementById('services-link').addEventListener('click', function() {
+    window.location.href = '../Serviço/servico.html';
+});
+
+document.getElementById('about-link').addEventListener('click', function() {
+    window.location.href = '../Sobre/sobre.html';
+});
+
+document.getElementById('support-link').addEventListener('click', function() {
+    window.location.href = '../Suporte/suporte.html';
+});
+
+
 // Seleciona todos os elementos interativos (botões, links e inputs)
 const interactiveElements = document.querySelectorAll('a, button, input, textarea, select');
 
@@ -20,16 +38,4 @@ interactiveElements.forEach(element => {
             element.click();
         }
     });
-
-    // Adiciona feedback auditivo ao clicar em botões ou links
-    element.addEventListener('click', () => {
-        const audio = new Audio('click-sound.mp3'); // Substitua pelo caminho do seu arquivo de áudio
-        audio.play();
-    });
-});
-
-// Feedback auditivo ao carregar a página
-window.addEventListener('load', () => {
-    const audio = new Audio('page-load-sound.mp3'); // Substitua pelo caminho do seu arquivo de áudio
-    audio.play();
 });

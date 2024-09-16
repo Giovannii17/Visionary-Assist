@@ -12,6 +12,7 @@ button {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
+    list-style: none;
 }
 
 .logo {
@@ -27,7 +28,7 @@ button {
     margin-top: -4.5rem;
 
 }
-
+/*  Barra de Navegação Fixa na parte de cima
 header {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,21 @@ header {
     background-size: cover;
     background-position: fixed 10%;
     position: relative;
+    z-index: 2;
+}
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 8%;
+    background-image: url('wave.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 2;
 }
 
@@ -76,7 +92,7 @@ button {
 button:hover {
     background-color: #036873;
 }
-
+/* Config para a Barra de Navegação Fixa
 .parent {
     display: flex;
     justify-content: flex-start;
@@ -92,7 +108,21 @@ button:hover {
     position: relative;
 
 }
-
+*/
+.parent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0;
+    background-image: url('design_fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 10%;
+    position: relative;
+}
 h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -250,13 +280,106 @@ h1 {
     border-radius: 10%;
 }
 .foco-visivel {
-    outline: 3px solid #00ff00; /* Cor do foco visível */
+    outline: 3px solid #3cff00; /* Cor do foco visível */
 }
 
 /*fim Estilo Cards */
 
-/* Configurações em Telas Menores */
+/*Inicio Estilo Footer */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.containerFooter{
+	max-width: 1170px;
+	margin:auto;
 
+}
+.rowFooter{
+	display:inline-flex;
+	flex-wrap: wrap;
+    
+}
+
+.footer{
+	background-color: #043136;
+    padding: 2% 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col p{
+	color: #ffffff;
+	margin-bottom: 30px;
+	font-weight: 400;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #262626;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-creditos {
+    text-align: center;
+    margin-top: 1%;
+    color: #e9ecef;
+    bottom: 0;
+    width: 100%;
+}
+/*Fim Estilo Footer */
+
+
+/* Configurações em Telas Menores */
 /* Inicio da Config do Header*/
 @media (max-width: 768px) {
     header {
