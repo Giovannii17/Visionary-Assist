@@ -90,7 +90,7 @@ button:hover {
     background-size: cover;
     background-position: center 10%;
     position: relative;
-    z-index: 1;
+
 }
 
 h1 {
@@ -168,14 +168,15 @@ h1 {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 1rem; 
 }
 
 .card {
-    flex: 1 1 45%;
+    flex: 1 1 30%;
     min-width: 250px;
     max-width: 350px;
     background: linear-gradient(135deg, #115259, #000000);
@@ -187,40 +188,18 @@ h1 {
     text-align: left;
 }
 
-.card2 {
-    flex: 1 1 45%;
-    min-width: 250px;
-    max-width: 350px;
-    background: linear-gradient(135deg, #115259, #000000);
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    color: white;
-    text-align: left;
-}
+
 
 .cards2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     justify-content: space-between;
+    margin-top: -3rem;
 }
 
-.card3,
-.card4 {
-    flex: 1 1 45%;
-    min-width: 250px;
-    max-width: 350px;
-    background: linear-gradient(135deg, #115259, #000000);
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    color: white;
-    text-align: left;
-}
+
 
 .card:hover {
     transform: translateY(-5px);
@@ -314,17 +293,21 @@ h1 {
 
 @media (max-width: 768px) {
     .parent {
+        margin-top: 0;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+        .relogio-inicial {
+            display: none;
+            /* Remove a imagem */
+        }
     }
 
     .descricao {
         max-width: 100%;
         margin-bottom: 2rem;
-    }
-
-    .imagem-container img {
-        max-width: 18rem;
     }
 }
 
@@ -340,8 +323,15 @@ h1 {
         max-width: none;
     }
 
-    .image-container {
-        margin: 2rem 0;
-        /* Espaçamento da imagem no mobile */
+    .imagem-containerFinal {
+        width: 90%;
+        max-width: none;
+        margin: 1rem auto;
+    }
+
+    .imagem-containerFinal img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
     }
 }

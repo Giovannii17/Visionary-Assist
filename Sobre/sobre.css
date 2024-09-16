@@ -68,17 +68,13 @@ nav {
 /* Quadros para conteúdo da página Sobre */
 
 .about-page {
-
-    background-image: url('design_fundo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 10%;
     display: flex;
     justify-content: flex-start;
     color: white;
     text-align: center;
+    width: 100%;
+    height: auto;
     padding: 2rem;
-    margin-top: -3%;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -124,7 +120,7 @@ nav {
 /* Seção da Equipe */
 .equipe-container {
     padding: 4rem 0;
-    background-color: #115259;
+
     color: white;
     text-align: center;
 }
@@ -167,7 +163,7 @@ nav {
 
 .footer {
     background-color: #0e454b;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     color: white;
     font-size: 0.9rem;

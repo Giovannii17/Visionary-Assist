@@ -63,14 +63,12 @@ nav {
 
 /* Página de Serviços */
 .services-page {
-    background-image: url('design_fundo.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background-color: #115259;
     color: white;
     margin-top: -2%;
 }
@@ -100,72 +98,26 @@ nav {
     line-height: 1.8;
 }
 
-/* Seção da Equipe */
-.equipe-container {
-    padding: 4rem 0;
-    background-color: #115259;
-    color: white;
-    text-align: center;
-}
-
-.equipe-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.cards-container .card {
-    flex: 1 1 30%;
-    max-width: 350px;
-    background: linear-gradient(135deg, #115259, #000000);
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-    color: white;
-    transition: transform 0.3s ease;
-}
-
-.cards-container .card:hover {
-    transform: translateY(-5px);
-}
-
-.cards-container .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.cards-container .card p {
-    font-size: 1rem;
-}
-
 /* Rodapé */
 .footer {
-    background-color: #262626;
-    padding: 2rem;
+    background-color: #000000;
+    padding: 1rem;
     text-align: center;
     color: white;
-    font-size: 0.9rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
+    .services-page .descricao {
+        max-width: 100%;
+        padding: 1rem;
     }
 
-    .card {
-        width: 90%;
-        margin-bottom: 2rem;
+    .services-page h2 {
+        font-size: 2rem;
     }
 
-    header {
-        flex-direction: column;
+    .services-page p {
+        font-size: 1rem;
     }
 }
