@@ -168,6 +168,10 @@ nav {
     color: white;
     font-size: 0.9rem;
 }
+.foco-visivel {
+    outline: 3px solid #00ff00; /* Cor do foco visível */
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {

@@ -172,7 +172,6 @@ h1 {
     padding: 1rem;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 1rem; 
 }
 
 .card {
@@ -196,7 +195,7 @@ h1 {
     gap: 1rem;
     padding: 1rem;
     justify-content: space-between;
-    margin-top: -3rem;
+    margin-top: -5%;
 }
 
 
@@ -242,12 +241,16 @@ h1 {
     width: 40%;
     max-width: 40%;
     margin: 0 auto;
+    margin-top: -10%;
 }
 
 .imagem-containerFinal img {
     max-width: 40%;
     height: auto;
     border-radius: 10%;
+}
+.foco-visivel {
+    outline: 3px solid #00ff00; /* Cor do foco visível */
 }
 
 /*fim Estilo Cards */

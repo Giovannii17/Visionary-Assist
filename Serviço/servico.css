@@ -97,6 +97,9 @@ nav {
     font-size: 1.2rem;
     line-height: 1.8;
 }
+.foco-visivel {
+    outline: 3px solid #00ff00; /* Cor do foco visível */
+}
 
 /* Rodapé */
 .footer {
