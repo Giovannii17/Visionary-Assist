@@ -75,7 +75,6 @@ nav {
 
 
 /* Quadros para conteúdo da página Sobre */
-
 .about-page {
     display: flex;
     justify-content: flex-start;
@@ -171,7 +170,7 @@ nav {
     font-size: 1rem;
 }
 .foco-visivel {
-    outline: 3px solid #00ff00; /* Cor do foco visível */
+    outline: 3px solid #00ff00;
 }
 
 /*Inicio Estilo Footer */
@@ -290,12 +289,9 @@ nav {
 
     .logo img {
         width: 80px;
-        /* Reduz o tamanho do logo */
         height: auto;
         margin-left: 0;
-        /* Remove a margem esquerda */
         margin-top: 0rem;
-        /* Ajusta a posição para baixo */
     }
 
     nav {
@@ -304,9 +300,7 @@ nav {
 
     .nav-links li {
         margin-right: 0;
-        /* Remove a margem à direita */
         margin-bottom: 1rem;
-        /* Espaçamento entre itens verticais */
     }
 }
 

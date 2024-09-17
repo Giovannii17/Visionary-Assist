@@ -280,7 +280,7 @@ h1 {
     border-radius: 10%;
 }
 .foco-visivel {
-    outline: 3px solid #3cff00; /* Cor do foco visível */
+    outline: 3px solid #3cff00;
 }
 
 /*fim Estilo Cards */
@@ -392,24 +392,18 @@ h1 {
 
     .logo img {
         width: 80px;
-        /* Reduz o tamanho do logo */
         height: auto;
         margin-left: 0;
-        /* Remove a margem esquerda */
         margin-top: 0rem;
-        /* Ajusta a posição para baixo */
     }
 
     nav {
         margin-top: 3rem;
-        /* Espaço entre o logo e os links de navegação */
     }
 
     .nav-links li {
         margin-right: 0;
-        /* Remove a margem à direita */
         margin-bottom: 1rem;
-        /* Espaçamento entre itens verticais */
     }
 }
 
@@ -427,7 +421,6 @@ h1 {
     @media (max-width: 768px) {
         .relogio-inicial {
             display: none;
-            /* Remove a imagem */
         }
     }
 
