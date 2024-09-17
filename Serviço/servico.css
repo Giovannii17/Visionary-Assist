@@ -215,3 +215,38 @@ nav {
         font-size: 1rem;
     }
 }
+
+/* Inicio da Config do Header*/
+@media (max-width: 768px) {
+    header {
+        background-color: #115259;
+        background-image: none;
+        background-size: auto;
+        padding: 1rem 4%;
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 80px;
+        /* Reduz o tamanho do logo */
+        height: auto;
+        margin-left: 0;
+        /* Remove a margem esquerda */
+        margin-top: 0rem;
+        /* Ajusta a posição para baixo */
+    }
+
+    nav {
+        margin-top: 3rem;
+        /* Espaço entre o logo e os links de navegação */
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        /* Remove a margem à direita */
+        margin-bottom: 1rem;
+        /* Espaçamento entre itens verticais */
+    }
+}
+
+/* Fim da Config do Header*/
