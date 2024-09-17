@@ -8,9 +8,8 @@ O Site Watch Vision oferece um serviço de assistência online para pessoas com 
 Em desenvolvimento
 
 ## :computer: Tecnologias aplicadas
-- IDE:Visual Studio Code | MySql Workbench
+- IDE:Visual Studio Code 
 - Linguagens: HTML | CSS | JAVASCRIPT
-- Banco de Dados: MySQL
 
 ## :busts_in_silhouette: Desenvolvedores
 - Giovanni Rodrigues
